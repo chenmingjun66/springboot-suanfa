@@ -1,4 +1,4 @@
-package com.chenmingjun.springbootsuanfa.刷题.二维数组中找数;
+package com.chenmingjun.springbootsuanfa.刷题.剑指offer.二维数组中找数;
 
 /**
  * @author chenmingjun

@@ -5,9 +5,10 @@ import com.chenmingjun.springbootsuanfa.基础.基础理论.二叉树遍历.非�
 /**
  * @author chenmingjun
  * @version 1.0
- * @date 2019/12/24 0024 上午 9:04
+ * @date 2019/12/24 0024 上午 9:08
  */
-public class InOrderTraversal {
+public class PostOrderTraversal {
+
     public static void main(String[] args) {
         Node head = new Node(1);
         head.left = new Node(2);
@@ -16,15 +17,19 @@ public class InOrderTraversal {
         head.left.right = new Node(5);
         head.right.left = new Node(6);
         head.right.right = new Node(7);
-        inOrderTraversal(head);
+        postOrderTraversal(head);
     }
 
-    public static void inOrderTraversal(Node head){
+    public static void postOrderTraversal(Node head){
+
         if (head == null){
             return;
         }
-        inOrderTraversal(head.left);
+        postOrderTraversal(head.left);
+        postOrderTraversal(head.right);
         System.out.println(head.var);
-        inOrderTraversal(head.right);
+
     }
+
+
 }

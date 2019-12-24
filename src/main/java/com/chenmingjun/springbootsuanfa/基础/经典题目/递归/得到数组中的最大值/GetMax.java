@@ -1,4 +1,4 @@
-package com.chenmingjun.springbootsuanfa.基础.基础理论.递归;
+package com.chenmingjun.springbootsuanfa.基础.经典题目.递归.得到数组中的最大值;
 
 public class GetMax {
 
