@@ -26,8 +26,9 @@ public class PreOrderTraversal {
         if (head == null){
             return;
         }
-        preOrderTraversal(head.left);
         System.out.println(head.var);
+        preOrderTraversal(head.left);
+
         preOrderTraversal(head.right);
     }
 }
